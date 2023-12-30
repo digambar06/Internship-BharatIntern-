@@ -41,8 +41,8 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: dnpatil663@gmail.com</p>
-        <p>LinkedIn: www.linkedin.com/in/digambar-patil-b5811323a</p>
+        <p>Email: <a href="mailto:dnpatil663@gmail.com">dnpatil663@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/digambar-patil-b5811323a/">Digambar Patil</a></p>
         <p>Number: 8080293341</p>
     </section>
 
