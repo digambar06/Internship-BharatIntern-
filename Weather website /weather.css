@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: linear-gradient(rgba(95, 92, 92, 0.5), rgba(32, 32, 32, 0.5)),
+    url(https://hmp.me/ebwh);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+.title {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Merriweather", serif;
+  margin-top: 20px;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+}
+.search-container {
+  margin-top: 20px;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+#city {
+  padding-left: 5px;
+  font-size: 1em;
+  border: 2px solid black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#city:focus {
+  outline: none;
+}
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+.search-button {
+  background-color: white;
+  position: relative;
+  right: calc(20px);
+  border: 2px solid black;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* ****************Weather container**************** */
+.weather-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  color: white;
+  max-width: 90%;
+  height: 200px;
+  margin: 20px auto;
+  padding: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.weather-image {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  margin-left: 5px;
+  float: right;
+  display: none;
+}
+.city-name {
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+.weeks-weather {
+  display: flex;
+  margin-left: 10px;
+  overflow-y: scroll;
+  gap: 10px;
+}
+/* hide scrollbar for chrome */
+.weeks-weather::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.weeks-weather {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.week-weather-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  color:white;
+  min-width:200px;
+  height: 200px;
+  margin: 20px auto;
+  padding: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.week-name {
+  text-align: center;
+}
+.week-temp {
+  text-align: center;
+}
+.week-image {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 10px auto 30px auto;
+}
+
+/* ***************Responsiveness*************** */
+@media only screen and (min-width: 400px) {
+  .weather-container {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  body {
+    background: linear-gradient(rgba(95, 92, 92, 0.5), rgba(32, 32, 32, 0.5)),
+      url(https://hmp.me/ebwi);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+  .title {
+    font-size: 3em;
+  }
+  .weather-container {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .weather-container {
+    width: 30%;
+  }
+}
